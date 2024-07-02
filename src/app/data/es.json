@@ -1,0 +1,336 @@
+{
+  "definition": "es",
+  "title": "Biblioteca Epidemiológica",
+  "language": {
+    "title": "Lenguaje",
+    "types": [
+      "Inglés",
+      "Español",
+      "Noruego"
+    ]
+  },
+  "home": {
+    "title": "Sobre nosotros",
+    "about": {
+      "title": "Sobre el proyecto",
+      "content": [
+        "Este proyecto fue desarrollado por mí, Lilith Díaz, para el programa \"Riesgos Catastróficos Globales\" de la organización Carreras con Impacto.",
+        "Para ver detalles técnicos y acceder al write-up consultar el ",
+        "repositorio en Github ",
+        "del proyecto."
+      ]
+    },
+    "objectives": {
+      "title": "Objetivos del proyecto",
+      "content": [
+        "Este proyecto pretende atender el área de riesgos biológicos mediante la creación de un repositorio que almacene información de importancia epidemiológica de los últimos 25 años en México (2000-2024).",
+        "La recolección de estos datos ayudará al futuro análisis de los eventos con el fin de no solamente facilitar la respuesta de México ante estos riesgos, sino de otros países; la comparación de respuestas facilitará la creación de estrategias modificadas de acuerdo a casos particulares."
+      ]
+    },
+    "news": {
+      "title": "Noticias y actualizaciones del proyecto",
+      "content": [
+        "Presentación del proyecto y despliegue oficial de la página el 10 de julio del 2024."
+      ]
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "content": [
+        ["Desarrolladora:", "Lilith Díaz (pinktaty)"],
+        ["Mentor:", "Carreras con Impacto"]
+      ]
+    }
+  },
+  "exploreData": {
+    "title": "Explore Data",
+    "instructions": "Para buscar información en la base de datos seleccionar la enfermedad y tras esto los filtros de su interés.",
+    "selectedDisease": "La enfermedad que ha seleccionado es:",
+    "userFilters": "Filtros seleccionados:",
+    "instructionUserFilters": "Para eliminar un filtro seleccionado, clicar en él.",
+    "diseases": {
+      "title": "Enfermedades",
+      "data": [
+        {
+          "title": "Chikungunya",
+          "filters": [
+            {
+              "title": "Años",
+              "data": [
+                {
+                  "title": "2020",
+                  "file": "Chikungunya2020es",
+                  "fileDescription": "Chikungunya 2020"
+                },
+                {
+                  "title": "2021",
+                  "file": "Chikungunya2021es",
+                  "fileDescription": "Chikungunya 2021"
+                },
+                {
+                  "title": "2022",
+                  "file": "Chikungunya2022es",
+                  "fileDescription": "Chikungunya 2022"
+                },
+                {
+                  "title": "2023",
+                  "file": "Chikungunya2023es",
+                  "fileDescription": "Chikungunya 2023"
+                },
+                {
+                  "title": "2024",
+                  "file": "Chikungunya2024es",
+                  "fileDescription": "Chikungunya 2024"
+                }]
+            }
+          ],
+          "graph": ""
+        },
+        {
+          "title": "Conjuntivitis hemorrágica epidémica",
+          "filters": [
+          ],
+          "graph": "",
+          "file": "ConjuntivitisHemorraicaEs",
+          "fileDescription": "Conjuntivitis hemorrágica epidémica 2000-2022"
+        },
+        {
+          "title": "Conjuntivitis",
+          "filters": [
+          ],
+          "graph": "",
+          "file": "ConjunctivitisEs",
+          "fileDescription": "Conjuntivitis 2003-2013"
+        },
+        {
+          "title": "Covid-19",
+          "filters": [
+            {
+              "title": "Años",
+              "data": [
+                {
+                  "title": "2020",
+                  "file": "",
+                  "fileDescription": "Covid-19 2020"
+                },
+                {
+                  "title": "2021",
+                  "file": "",
+                  "fileDescription": "Covid-19 2021"
+                },
+                {
+                  "title": "2022",
+                  "file": "",
+                  "fileDescription": "Covid-19 2022"
+                },
+                {
+                  "title": "2023",
+                  "file": "",
+                  "fileDescription": "Covid-19 2021"
+                }]
+            }
+          ],
+          "graph": ""
+        },
+        {
+          "title": "Dengue",
+          "filters": [
+            {
+              "title": "Años",
+              "data": [
+                {
+                  "title": "2023",
+                  "file": "",
+                  "fileDescription": "Dengue 2023"
+                },
+                {
+                  "title": "2024",
+                  "file": "",
+                  "fileDescription": "Dengue 2024"
+                }]
+            }
+          ],
+          "graph": ""
+        },
+        {
+          "title": "Difteria",
+          "filters": [
+          ],
+          "graph": "",
+          "file": "",
+          "fileDescription": "Difteria "
+        },
+        {
+          "title": "Entiritis Debida a Rotavirus",
+          "filters": [
+          ],
+          "graph": "",
+          "file": "",
+          "fileDescription": "Entiritis Debida a Rotavirus "
+        },
+        {
+          "title": "Fiebre",
+          "filters": [
+            {
+              "title": "Tipos",
+              "data": [
+                {
+                  "title": "Tifoida",
+                  "file": "",
+                  "fileDescription": "Fiebre Tifoida "
+                }]
+            }
+          ],
+          "graph": ""
+        },
+        {
+          "title": "Hepatitis",
+          "filters": [
+            {
+              "title": "Tipos",
+              "data": [
+                {
+                  "title": "A",
+                  "file": "",
+                  "fileDescription": "Hepatitis A "
+                },
+                {
+                  "title": "B",
+                  "file": "",
+                  "fileDescription": "Hepatitis B "
+                },
+                {
+                  "title": "C",
+                  "file": "",
+                  "fileDescription": "Hepatitis C"
+                }]
+            }
+          ],
+          "graph": ""
+        },
+        {
+          "title": "Influenza",
+          "filters": [
+            {
+              "title": "Tipos",
+              "data": [
+                {
+                  "title": "Del Aparato Respiratorio",
+                  "file": "",
+                  "fileDescription": "Influenza Del Aparato Respiratorio "
+                },
+                {
+                  "title": "A (H1N1)",
+                  "file": "",
+                  "fileDescription": "Influenza A (H1N1) "
+                }]
+            }
+          ],
+          "graph": ""
+        },
+        {
+          "title": "Mpox",
+          "filters": [
+          ],
+          "graph": "",
+          "file": "",
+          "fileDescription": "Mpox "
+        },
+        {
+          "title": "Sarampión",
+          "filters": [
+          ],
+          "graph": "",
+          "file": "",
+          "fileDescription": "Sarampión "
+        },
+        {
+          "title": "Tuberculosis",
+          "filters": [
+            {
+              "title": "Tipos",
+              "data": [
+                {
+                  "title": "Del Aparato Respiratorio",
+                  "file": "",
+                  "fileDescription": "Tuberculosis Del Aparato Respiratorio "
+                },
+                {
+                  "title": "Meníngenea",
+                  "file": "",
+                  "fileDescription": "Tuberculosis Meníngenea "
+                }]
+            }
+          ],
+          "graph": ""
+        },
+        {
+          "title": "Zika",
+          "filters": [
+            {
+              "title": "Years",
+              "data": [
+                {
+                  "title": "2015-2020",
+                  "file": "",
+                  "fileDescription": "Zika 2015-2020"
+                },
+                {
+                  "title": "2021",
+                  "file": "",
+                  "fileDescription": "Zika 2021"
+                },
+                {
+                  "title": "2022",
+                  "file": "",
+                  "fileDescription": "Zika 2022"
+                },
+                {
+                  "title": "2023",
+                  "file": "",
+                  "fileDescription": "Zika 2023"
+                }]
+            }
+          ],
+          "graph": ""
+        }
+      ]
+    },
+    "classifications": ["Pandemic", "Epidemiological Outbreak"],
+    "emergencyLevels": ["High", "Medium", "Low"]
+  },
+  "additionalResources": {
+    "title": "Recursos Adicionales",
+    "names": ["Biorisk Adventure",
+      "Escaneo rápido de uso dual",
+      "Auto-escaneo en bioseguridad",
+      "Prevención de uso dual",
+      "App de bioseguridad canadiense",
+      "Base de datos BWC",
+      "ePATHogen - Base de datos",
+      "Encuestas Biocheck.UGent"],
+    "descriptions": [
+      "Al jugar este juego, aprenderá cómo aplicar conocimientos y tomar decisiones acertadas en la selección de medidas de control de riesgos que sean alcanzables utilizando los recursos locales disponibles, sin ser demasiado restrictivas y que permitan que el trabajo se realice de manera segura y protegida.",
+      "El propósito de este escaneo de uso dual en línea es identificar posibles aspectos de doble uso en la investigación.",
+      "Cuestionario que cubre los ocho pilares de la bioseguridad y está diseñado para ofrecer una indicación del nivel actual de bioseguridad en su organización.",
+      "El Grupo Internacional de Expertos en Reguladores de Bioseguridad y Bioprotección (IEGBBR) desarrolló la Aplicación Móvil IEGBBR que permite a los usuarios buscar a través de descripciones detalladas de los enfoques nacionales de supervisión regulatoria de los 11 países miembros de IEGBBR.",
+      "Permite a los usuarios interactuar con los Estándares Canadienses de Bioseguridad (CBS) encontrando los requisitos específicos para su instalación.",
+      "La base de datos contiene ejemplos de legislación que cubren disposiciones penales, medidas de bioseguridad y bioprotección, medidas de control de exportaciones y aplicación de la ley.",
+      "Para realizar búsquedas de agentes biológicos.",
+      "Biocheck.UGent es un sistema de puntuación para medir el riesgo de bioseguridad a nivel de granja. La herramienta permite a los agricultores cuantificar los riesgos de bioseguridad asociados con el ganado, cerdos, aves de corral y pequeños rumiantes."
+    ],
+    "language": "Lenguajes disponibles: ",
+    "languages": ["Inglés",
+      "Inglés, Ruso, Holandés",
+      "Inglés, Ruso, Holandés, Francés, Turco",
+      "Inglés, Francés",
+      "Inglés", "Inglés", "Inglés", "Inglés"],
+    "links": ["https://ifbabioriskadventure.org/",
+      "https://dualusequickscan.com/en/",
+      "https://biosecurityselfscan.nl/en/home",
+      "https://biosecuritycentral.org/resource/requirements-and-protocols/iegbbr-app/",
+      "https://biosecuritycentral.org/resource/requirements-and-protocols/canadian-biosafety-app/",
+      "https://www.vertic.org/programmes/nim/biological-weapons-and-materials/bwc-legislation-database/",
+      "https://health.canada.ca/en/epathogen",
+      "https://biosecuritycentral.org/resource/training-materials/biocheck-surveys/"]
+  }
+}
