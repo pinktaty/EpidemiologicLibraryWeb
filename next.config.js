@@ -3,11 +3,11 @@
  */
 const nextConfig = {
     output: "export",
-    distDir: 'dist',
+    basePath: '/EpidemiologicLibrary',
     images: {
-        loader: "akamai",
-        path: ""
-    }
+        unoptimized: true,
+    },
+    trailingSlash: true,
 }
 
 module.exports = nextConfig
