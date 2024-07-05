@@ -17,7 +17,7 @@ export default function Home(){
 
     const contact = languageData.home.contact;
     const contentContact = contact.content;
-    const contactLinks = ["www.linkedin.com/in/diaz-lilith04", "https://carrerasconimpacto.org/"];
+    const contactLinks = ["https://www.linkedin.com/in/diaz-lilith04", "https://carrerasconimpacto.org/"];
 
     const loadTitle = (title, icon) => {
         return (
@@ -47,13 +47,14 @@ export default function Home(){
         return contacts;
     }
 
+    // AGREGAR MI LINKEDIN
     return (
         <div>
             <div className="m-2 mb-10">
                 {loadTitle(about.title, faBiohazard)}
                 <p className="mt-2">{contentAbout[0]}</p>
                 <p className="mt-2">{contentAbout[1]}
-                    <a href="https://github.com/pinktaty/EpidemiologicLibrary" target="_blank">
+                    <a href={"https://github.com/pinktaty/EpidemiologicLibrary"} target="_blank">
                         {contentAbout[2]}
                     </a>
                     {contentAbout[3]}

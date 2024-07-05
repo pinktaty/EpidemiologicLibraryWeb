@@ -4,11 +4,11 @@ export const LanguageContext = createContext();
 
 export default function LanguageProvider(props) {
     const [language, setLanguage] = useState("es");
-    const [languageData, setLanguageData] = useState(require(`./data/${language}.json`));
+    const [languageData, setLanguageData] = useState(require(`./language/${language}.json`));
 
     const changeLanguage = (newLanguage) => {
         setLanguage(newLanguage);
-        setLanguageData(require(`./data/${newLanguage}.json`));
+        setLanguageData(require(`./language/${newLanguage}.json`));
     }
 
     const  value = {languageData, changeLanguage}

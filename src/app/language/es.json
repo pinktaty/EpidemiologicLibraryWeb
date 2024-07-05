@@ -49,6 +49,7 @@
     "instructionUserFilters": "Para eliminar un filtro seleccionado, clicar en él.",
     "diseases": {
       "title": "Enfermedades",
+      "cases": "Casos Detectados ",
       "data": [
         {
           "title": "Chikungunya",
@@ -59,27 +60,32 @@
                 {
                   "title": "2020",
                   "file": "Chikungunya2020es",
-                  "fileDescription": "Chikungunya 2020"
+                  "fileDescription": "Chikungunya 2020",
+                  "image": "Chikungunya2020"
                 },
                 {
                   "title": "2021",
                   "file": "Chikungunya2021es",
-                  "fileDescription": "Chikungunya 2021"
+                  "fileDescription": "Chikungunya 2021",
+                  "image": "Chikungunya2021"
                 },
                 {
                   "title": "2022",
                   "file": "Chikungunya2022es",
-                  "fileDescription": "Chikungunya 2022"
+                  "fileDescription": "Chikungunya 2022",
+                  "image": "Chikungunya2022"
                 },
                 {
                   "title": "2023",
                   "file": "Chikungunya2023es",
-                  "fileDescription": "Chikungunya 2023"
+                  "fileDescription": "Chikungunya 2023",
+                  "image": "Chikungunya2023"
                 },
                 {
                   "title": "2024",
                   "file": "Chikungunya2024es",
-                  "fileDescription": "Chikungunya 2024"
+                  "fileDescription": "Chikungunya 2024",
+                  "image": "Chikungunya2024"
                 }]
             }
           ],
@@ -91,7 +97,8 @@
           ],
           "graph": "",
           "file": "ConjuntivitisHemorraicaEs",
-          "fileDescription": "Conjuntivitis hemorrágica epidémica 2000-2022"
+          "fileDescription": "Conjuntivitis hemorrágica epidémica 2000-2022",
+          "image": ""
         },
         {
           "title": "Conjuntivitis",
@@ -99,7 +106,8 @@
           ],
           "graph": "",
           "file": "ConjunctivitisEs",
-          "fileDescription": "Conjuntivitis 2003-2013"
+          "fileDescription": "Conjuntivitis 2003-2013",
+          "image": ""
         },
         {
           "title": "Covid-19",
@@ -109,23 +117,27 @@
               "data": [
                 {
                   "title": "2020",
-                  "file": "",
-                  "fileDescription": "Covid-19 2020"
+                  "file": "Covid-19-2020es",
+                  "fileDescription": "Covid-19 2020",
+                  "image": ""
                 },
                 {
                   "title": "2021",
-                  "file": "",
-                  "fileDescription": "Covid-19 2021"
+                  "file": "Covid-19-2021es",
+                  "fileDescription": "Covid-19 2021",
+                  "image": ""
                 },
                 {
                   "title": "2022",
-                  "file": "",
-                  "fileDescription": "Covid-19 2022"
+                  "file": "Covid-19-2022es",
+                  "fileDescription": "Covid-19 2022",
+                  "image": ""
                 },
                 {
                   "title": "2023",
-                  "file": "",
-                  "fileDescription": "Covid-19 2021"
+                  "file": "Covid-19-2023es",
+                  "fileDescription": "Covid-19 2023",
+                  "image": ""
                 }]
             }
           ],
@@ -139,13 +151,15 @@
               "data": [
                 {
                   "title": "2023",
-                  "file": "",
-                  "fileDescription": "Dengue 2023"
+                  "file": "Dengue-2023es",
+                  "fileDescription": "Dengue 2023",
+                  "image": ""
                 },
                 {
                   "title": "2024",
-                  "file": "",
-                  "fileDescription": "Dengue 2024"
+                  "file": "Dengue-2024es",
+                  "fileDescription": "Dengue 2024",
+                  "image": ""
                 }]
             }
           ],
@@ -156,16 +170,18 @@
           "filters": [
           ],
           "graph": "",
-          "file": "",
-          "fileDescription": "Difteria "
+          "file": "DifteriaEs",
+          "fileDescription": "Difteria ",
+          "image": ""
         },
         {
           "title": "Entiritis Debida a Rotavirus",
           "filters": [
           ],
           "graph": "",
-          "file": "",
-          "fileDescription": "Entiritis Debida a Rotavirus "
+          "file": "EntiritisRotavirusEs",
+          "fileDescription": "Entiritis Debida a Rotavirus 2008-2022",
+          "image": ""
         },
         {
           "title": "Fiebre",
@@ -175,8 +191,9 @@
               "data": [
                 {
                   "title": "Tifoida",
-                  "file": "",
-                  "fileDescription": "Fiebre Tifoida "
+                  "file": "FiebreTifoida",
+                  "fileDescription": "Fiebre Tifoidea 2000-2022",
+                  "image": ""
                 }]
             }
           ],
@@ -190,18 +207,21 @@
               "data": [
                 {
                   "title": "A",
-                  "file": "",
-                  "fileDescription": "Hepatitis A "
+                  "file": "HepatitisAes",
+                  "fileDescription": "Hepatitis A 2000-2022",
+                  "image": ""
                 },
                 {
                   "title": "B",
-                  "file": "",
-                  "fileDescription": "Hepatitis B "
+                  "file": "HepatitisBes",
+                  "fileDescription": "Hepatitis B 2000-2022",
+                  "image": ""
                 },
                 {
                   "title": "C",
-                  "file": "",
-                  "fileDescription": "Hepatitis C"
+                  "file": "HepatitisCes",
+                  "fileDescription": "Hepatitis C 2000-2022",
+                  "image": ""
                 }]
             }
           ],
@@ -215,13 +235,15 @@
               "data": [
                 {
                   "title": "Del Aparato Respiratorio",
-                  "file": "",
-                  "fileDescription": "Influenza Del Aparato Respiratorio "
+                  "file": "InfluenzaAparatoRespiratorio",
+                  "fileDescription": "Influenza Del Aparato Respiratorio 2000-2022",
+                  "image": ""
                 },
                 {
                   "title": "A (H1N1)",
-                  "file": "",
-                  "fileDescription": "Influenza A (H1N1) "
+                  "file": "InfluenzaA(H1N1)es",
+                  "fileDescription": "Influenza A (H1N1) 2009-2013",
+                  "image": ""
                 }]
             }
           ],
@@ -232,16 +254,18 @@
           "filters": [
           ],
           "graph": "",
-          "file": "",
-          "fileDescription": "Mpox "
+          "file": "Mpox2022-2023es",
+          "fileDescription": "Mpox 2022-2023",
+          "image": ""
         },
         {
           "title": "Sarampión",
           "filters": [
           ],
           "graph": "",
-          "file": "",
-          "fileDescription": "Sarampión "
+          "file": "Sarampion-2020",
+          "fileDescription": "Sarampión 2020",
+          "image": ""
         },
         {
           "title": "Tuberculosis",
@@ -251,13 +275,15 @@
               "data": [
                 {
                   "title": "Del Aparato Respiratorio",
-                  "file": "",
-                  "fileDescription": "Tuberculosis Del Aparato Respiratorio "
+                  "file": "TuberculosisAparatoRespiratorio",
+                  "fileDescription": "Tuberculosis Del Aparato Respiratorio 2000-2022",
+                  "image": ""
                 },
                 {
                   "title": "Meníngenea",
-                  "file": "",
-                  "fileDescription": "Tuberculosis Meníngenea "
+                  "file": "TuberculosisMeningenea",
+                  "fileDescription": "Tuberculosis Meníngenea 2000-2016",
+                  "image": ""
                 }]
             }
           ],
@@ -271,23 +297,27 @@
               "data": [
                 {
                   "title": "2015-2020",
-                  "file": "",
-                  "fileDescription": "Zika 2015-2020"
+                  "file": "Zika2015-2020es",
+                  "fileDescription": "Zika 2015-2020",
+                  "image": ""
                 },
                 {
                   "title": "2021",
-                  "file": "",
-                  "fileDescription": "Zika 2021"
+                  "file": "Zika2021es",
+                  "fileDescription": "Zika 2021",
+                  "image": ""
                 },
                 {
                   "title": "2022",
-                  "file": "",
-                  "fileDescription": "Zika 2022"
+                  "file": "Zika2022es",
+                  "fileDescription": "Zika 2022",
+                  "image": ""
                 },
                 {
                   "title": "2023",
-                  "file": "",
-                  "fileDescription": "Zika 2023"
+                  "file": "Zika2023es",
+                  "fileDescription": "Zika 2023",
+                  "image": ""
                 }]
             }
           ],

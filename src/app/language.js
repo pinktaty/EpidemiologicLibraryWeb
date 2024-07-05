@@ -24,7 +24,7 @@ export default function MenuLanguages() {
             buttons.push(
                 <button onClick={() => changeLanguageAux(`${languages[i]}`)}
                         className="sm:my-1 w-full text-center rounded-md p-2 text-sm hover:bg-gray-500 hover:text-white">
-                    <Image className="absolute" src={`/${languages[i]}.svg`} alt={`${languageData.language.types[i]}`}  width={20} height={20}/>
+                    <Image className="absolute" src={`/languages/${languages[i]}.svg`} alt={`${languageData.language.types[i]}`}  width={20} height={20}/>
                     <span className="ml-5">{languages[i]}</span>
                 </button>
             );

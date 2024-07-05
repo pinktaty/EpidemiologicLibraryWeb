@@ -1,7 +1,8 @@
 import {useContext, useState} from "react";
 import {LanguageContext} from "@/app/language-context";
-import {faCalendarDays, faDisease, faSquareVirus, faDownload} from "@fortawesome/free-solid-svg-icons";
+import {faCalendarDays, faDisease, faSquareVirus, faDownload, faTurnDown} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
 export default function ExploreData(){
 
@@ -136,9 +137,14 @@ export default function ExploreData(){
     const loadSelectedFilters = () => {
         if(userFilters.length !== 0){
             return(
-                <div>
+                <div className="flex flex-col items-center">
                     <h1 className="mt-6 text-lg">{exploreData.userFilters}</h1>
-                    <p>{exploreData.instructionUserFilters}</p>
+                    <p className="mb-2">
+                        {exploreData.instructionUserFilters}
+                        <div className="text-center text-my-green">
+                            <FontAwesomeIcon icon={faTurnDown}/>
+                        </div>
+                    </p>
                     {selectedFilters()}
                 </div>
             );
@@ -146,17 +152,24 @@ export default function ExploreData(){
     }
 
     const loadDownload = (filter) => {
-        const file = filter.file;
-        const description = filter.fileDescription;
-
         return (
             <div className="text-center m-8">
                 <a className="text-7xl text-my-green"
-                href={`./files/${file}.xlsx`} download
+                   href={`./data/files/${filter.file}.xlsx`} download
                 >
                     <FontAwesomeIcon icon={faDownload}/>
                 </a>
-                <p>{description}</p>
+                <p className="mt-3">{filter.fileDescription}</p>
+                <div className="flex flex-col items-center mt-10">
+                    <Image
+                        className="mx-auto border-my-yellow border-4 rounded-2xl"
+                        src={`/graphs/${filter.image}.png`}
+                        alt=""
+                        width={500}
+                        height={500}
+                    />
+                    <p className="mt-3 text-center">{diseases.cases} {filter.fileDescription}</p>
+                </div>
             </div>
         );
     }
@@ -164,7 +177,7 @@ export default function ExploreData(){
     const loadDownloads = () => {
         let downloads = [];
 
-        if(userFilters.length !== 0){
+        if (userFilters.length !== 0) {
             for (let i = 0; i < userFilters.length; i++) {
                 downloads.push(loadDownload(userFilters[i]));
             }
