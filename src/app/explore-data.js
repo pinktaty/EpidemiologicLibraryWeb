@@ -155,7 +155,7 @@ export default function ExploreData(){
         return (
             <div className="text-center m-8">
                 <a className="text-7xl text-my-green"
-                   href={`./data/files/${filter.file}.xlsx`} download
+                   href={`/files/${filter.file}.xlsx`} download
                 >
                     <FontAwesomeIcon icon={faDownload}/>
                 </a>
