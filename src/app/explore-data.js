@@ -155,16 +155,16 @@ export default function ExploreData(){
         return (
             <div className="text-center m-8">
                 <a className="text-7xl text-my-green"
-                   href={`/EpidemiologicLibraryWeb/files/${filter.file}.xlsx`} download
+                   href={`./files/${filter.file}.xlsx`} download
                 >
                     <FontAwesomeIcon icon={faDownload}/>
                 </a>
                 <p className="mt-3">{filter.fileDescription}</p>
                 <div className="flex flex-col items-center mt-10">
-                    <p>AAAAAAAAAAAAAAAAAAAAAAAA</p>
+                    <p>BBBBBBBBBBBBB</p>
                     <Image
                         className="mx-auto border-my-yellow border-4 rounded-2xl"
-                        src={`/graphs/${filter.image}.png`}
+                        src={`./graphs/${filter.image}.png`}
                         alt=""
                         width={500}
                         height={500}
