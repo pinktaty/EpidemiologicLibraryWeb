@@ -4,6 +4,7 @@
 const nextConfig = {
     output: "export",
     basePath: "/EpidemiologicLibraryWeb",
+    assetPrefix: '/EpidemiologicLibraryWeb/',
     images: {
         unoptimized: true,
     },
