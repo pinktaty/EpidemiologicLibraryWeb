@@ -161,6 +161,7 @@ export default function ExploreData(){
                 </a>
                 <p className="mt-3">{filter.fileDescription}</p>
                 <div className="flex flex-col items-center mt-10">
+                    <p>AAAAAAAAAAAAAAAAAAAAAAAA</p>
                     <Image
                         className="mx-auto border-my-green border-4 rounded-2xl"
                         src={`/EpidemiologicLibraryWeb/graphs/${filter.image}.png`}
