@@ -18,7 +18,7 @@ export default function Page() {
         </head>
         <body>
         <div className="sm:flex justify-between items-center bg-my-blue mb-6 pb-1 sm:pb-0 text-white">
-            <h1 className="flex justify-center items-center p-6 text-4xl font-bold">
+            <h1 className="flex items-center p-6 text-4xl font-bold">
                 <div className="mr-4">
                     <FontAwesomeIcon icon={faBiohazard}/>
                 </div>
