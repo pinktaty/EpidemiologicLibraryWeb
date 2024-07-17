@@ -6,11 +6,25 @@ import Image from "next/image";
 
 export default function ExploreData(){
 
+    // Instructions
+
+    const loadInstructions = () => {
+        return (
+            <div className="mt-12 mb-6 text-center">
+                <p className="mb-2">{exploreData.instructions}</p>
+                <p className="mb-2">{exploreData.specifications}</p>
+                <p>{exploreData.actualization}</p>
+            </div>
+        );
+    }
+
+    // Manage of filters
+
     const [userFilters, setUserFilters] = useState([]);
 
     const filterSelected = (filterSelected) => {
         for (let i = 0; i < userFilters.length; i++) {
-            if(userFilters[i] === filterSelected) return;
+            if (userFilters[i] === filterSelected) return;
         }
         setUserFilters([...userFilters, filterSelected]);
     };
@@ -30,10 +44,15 @@ export default function ExploreData(){
         setUserFilters([]);
     }
 
+    // Data extraction
+
     const {languageData} = useContext(LanguageContext);
+    let languageUsed = languageData.definition;
     const exploreData = languageData.exploreData;
 
     const diseases = exploreData.diseases;
+
+    // Filters
 
     const createFilter = (option, icon, fun) => {
         const data = option.data;
@@ -92,27 +111,11 @@ export default function ExploreData(){
         );
     }
 
-    const loadDiseases = () => {
-        return createFilter(diseases, faDisease, selectDisease);
-    }
-
     const loadFilters = () => {
         if(diseaseSelected !== null){
             return createFilters();
         }
     }
-
-    const loadSelectedDisease = () => {
-        if(diseaseSelected !== null){
-            return (
-                <div className="text-center mb-4">
-                    <h1 className="mt-6 mb-4 text-lg">{exploreData.selectedDisease}</h1>
-                    <p className="inline-block text-lg p-2 border-2 rounded-md border-my-green">{diseaseSelected.title}</p>
-                </div>
-            );
-        }
-    }
-
     const selectedFilters = () => {
         let selectedFilters = [];
 
@@ -127,11 +130,11 @@ export default function ExploreData(){
         }
 
         return (
-            <div className="flex flex-wrap justify-center mb-6">
+            <div className="flex flex-wrap justify-center mb-5">
                 {selectedFilters}
             </div>
-    )
-        ;
+        )
+            ;
     }
 
     const loadSelectedFilters = () => {
@@ -141,7 +144,7 @@ export default function ExploreData(){
                     <h1 className="mt-6 text-lg">{exploreData.userFilters}</h1>
                     <p className="mb-2">
                         {exploreData.instructionUserFilters}
-                        <div className="text-center text-my-green">
+                        <div className="text-center text-2xl text-my-green">
                             <FontAwesomeIcon icon={faTurnDown}/>
                         </div>
                     </p>
@@ -151,28 +154,62 @@ export default function ExploreData(){
         }
     }
 
-    const loadDownload = (filter) => {
+    // Diseases selected
+
+    const loadSelectedDisease = () => {
+        if(diseaseSelected !== null){
+            return (
+                <div className="text-center mb-4">
+                    <h1 className="mt-6 mb-4 text-lg">{exploreData.selectedDisease}</h1>
+                    <p className="inline-block text-lg p-2 border-2 rounded-md border-my-green">{diseaseSelected.title}</p>
+                </div>
+            );
+        }
+    }
+
+    const loadDiseases = () => {
         return (
-            <div className="text-center m-8">
-                <a className="text-7xl text-my-green"
-                   href={`./files/${filter.file}.xlsx`} download
-                >
-                    <FontAwesomeIcon icon={faDownload}/>
-                </a>
-                <p className="mt-3">{filter.fileDescription}</p>
-                <div className="flex flex-col items-center mt-10">
-                    <p>BBBBBBBBBBBBB</p>
+            <div className="mt-6">
+                {createFilter(diseases, faDisease, selectDisease)}
+            </div>
+        );
+    }
+
+    // Downloads
+
+    const loadDownload = (filter) => {
+
+        // TODO: Hacer que  mi información cambie si el idioma cambia
+
+        return (
+            <div className="lg:flex items-center text-center m-8">
+                <div className="lg:w-1/4">
+                    <a className="text-7xl text-my-green"
+                       href={`./files/repository/${filter.file}.xlsx`} download>
+                        <FontAwesomeIcon icon={faDownload}/>
+                    </a>
+                    <p className="mt-3 whitespace-pre-line">{filter.fileDescription}</p>
+                </div>
+                <div className="lg:w-2/4 flex flex-col items-center mt-10">
                     <Image
                         className="mx-auto border-my-yellow border-4 rounded-2xl"
                         src={`./graphs/${filter.image}.png`}
                         alt=""
-                        width={500}
-                        height={500}
+                        width={400}
+                        height={400}
                     />
                     <p className="mt-3 text-center">{diseases.cases} {filter.fileDescription}</p>
                 </div>
+                <div className="lg:w-1/4 flex flex-col items-center mt-10">
+                    <p className="p-4 mb-6 inline-flex border-my-green border-2 rounded-2xl">{filter.fileContent}</p>
+                    <p className="p-2 inline-flex border-my-yellow border-2 rounded-2xl">{diseases.source}
+                        <a className="text-my-green pl-1" href={`./files/sources/${filter.source}.pdf`} download>
+                            <FontAwesomeIcon icon={faDownload}/>
+                        </a>
+                    </p>
+                </div>
             </div>
-        );
+    );
     }
 
     const loadDownloads = () => {
@@ -186,9 +223,12 @@ export default function ExploreData(){
         return downloads;
     }
 
+    // TODO: Problema en cambio de lenguaje tras haber sellecionado una enfermedad,
+    //  manejar estado entre componenetes o reelodear toda la página.
+
     return(
         <div className="pb-14">
-            <p className="mb-6 text-center">{exploreData.instructions}</p>
+            {loadInstructions()}
             {loadDiseases()}
             {loadSelectedDisease()}
             {loadFilters()}

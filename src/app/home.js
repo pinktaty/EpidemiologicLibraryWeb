@@ -1,6 +1,6 @@
 import {useContext} from "react";
 import {LanguageContext} from "@/app/language-context";
-import {faBiohazard, faAddressBook, faBullseye, faNewspaper} from "@fortawesome/free-solid-svg-icons";
+import {faVirus, faAddressBook, faBullseye, faNewspaper} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Home(){
@@ -21,7 +21,7 @@ export default function Home(){
 
     const loadTitle = (title, icon) => {
         return (
-            <h1 className="flex text-2xl p-3 mb-2 border-b-2 border-b-my-green">
+            <h1 className="flex text-2xl p-3 mb-2 mt-2 border-b-2 border-b-my-green">
                 <div className="mr-2 text-my-yellow">
                     <FontAwesomeIcon icon={icon}/>
                 </div>
@@ -47,11 +47,10 @@ export default function Home(){
         return contacts;
     }
 
-    // AGREGAR MI LINKEDIN
     return (
         <div>
             <div className="m-2 mb-10">
-                {loadTitle(about.title, faBiohazard)}
+                {loadTitle(about.title, faVirus)}
                 <p className="mt-2">{contentAbout[0]}</p>
                 <p className="mt-2">{contentAbout[1]}
                     <a href={"https://github.com/pinktaty/EpidemiologicLibrary"} target="_blank">

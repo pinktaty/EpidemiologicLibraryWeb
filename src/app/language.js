@@ -36,7 +36,7 @@ export default function MenuLanguages() {
         <div className="relative inline-block text-left">
             <button onClick={toggleMenu}
                     className="flex items-center mr-1.5 text-lg">{languageData.language.title}</button>
-            <div className={`${open ? 'block' : 'hidden'} absolute mt-2 right-0 w-22 sm:mt-3 bg-my-blue rounded p-1`}>
+            <div className={`${open ? 'block z-10' : 'hidden'} absolute mt-2 right-0 w-22 sm:mt-3 bg-my-blue rounded p-1`}>
                 {createButtons(["es", "en"])}
             </div>
         </div>
