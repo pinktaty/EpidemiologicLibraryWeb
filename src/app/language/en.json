@@ -518,93 +518,94 @@
     "sections": [
       {
         "title": "Data bases",
-        "names": [
-          "BWC Legislation Database",
-          "ePATHogen - Risk Group Database"
-        ],
-        "descriptions": [
-          "The database contains examples of legislation covering criminal provisions, biosafety and biosecurity measures, export control measures and enforcement.",
-          "To conduct searches in biological agents."
-        ],
-        "languages": [
-          "English",
-          "English"
-        ],
-        "links": [
-          "https://www.vertic.org/programmes/nim/biological-weapons-and-materials/bwc-legislation-database/",
-          "https://health.canada.ca/en/epathogen"
+        "resources": [
+          {
+            "name":"BWC Legislation Database",
+            "description": "The database contains examples of legislation covering criminal provisions, biosafety and biosecurity measures, export control measures and enforcement.",
+            "language": "English",
+            "link": "https://www.vertic.org/programmes/nim/biological-weapons-and-materials/bwc-legislation-database/"
+          },
+          {
+            "name":"ePATHogen - Risk Group Database",
+            "description": "To conduct searches in biological agents.",
+            "language": "English",
+            "link": "https://health.canada.ca/en/epathogen"
+          }
         ]
       },
       {
         "title": "Tools",
-        "names": [
-          "Dual-Use Quickscan",
-          "Biosecurity Self-scan Toolkit",
-          "Biocheck.UGent surveys"
-        ],
-        "descriptions": [
-          "The purpose of this online Dual-Use Quickscan is to identify potential dual-use aspects in research.",
-          "The toolkit is in the form of a questionnaire covering the eight pillars of biosecurity that is designed to give you an indication of the current level of biosecurity in your organisation.",
-          "Biocheck.UGent is a scoring system to measure biosecurity risk at the farm level. The tool allows farmers to quantify the biosecurity risks associated with cattle, pig, poultry, and small ruminants."
-        ],
-        "languages": [
-          "English, Russian, Dutch",
-          "English, Russian, Dutch, French, Turkish",
-          "English"
-        ],
-        "links": [
-          "https://dualusequickscan.com/en/",
-          "https://biosecurityselfscan.nl/en/home",
-          "https://biosecuritycentral.org/resource/training-materials/biocheck-surveys/"
+        "resources": [
+          {
+            "name":"Dual-Use Quickscan",
+            "description": "The purpose of this online Dual-Use Quickscan is to identify potential dual-use aspects in research.",
+            "language": "English, Russian, Dutch",
+            "link": "https://dualusequickscan.com/en/"
+          },
+          {
+            "name":"Biosecurity Self-scan Toolkit",
+            "description": "The toolkit is in the form of a questionnaire covering the eight pillars of biosecurity that is designed to give you an indication of the current level of biosecurity in your organisation.",
+            "language": "English, Russian, Dutch, French, Turkish",
+            "link": "https://biosecurityselfscan.nl/en/home"
+          },
+          {
+            "name":"Biocheck.UGent surveys",
+            "description": "Biocheck.UGent is a scoring system to measure biosecurity risk at the farm level. The tool allows farmers to quantify the biosecurity risks associated with cattle, pig, poultry, and small ruminants.",
+            "language": "English",
+            "link": "https://biosecuritycentral.org/resource/training-materials/biocheck-surveys/"
+          }
         ]
       },
       {
         "title": "Web apps",
-        "names": [
-          "Dual-Use Oversight",
-          "Canadian Biosafety App"
-        ],
-        "descriptions": [
-          "The International Experts Group of Biosafety and Biosecurity Regulators (IEGBBR) developed the IEGBBR Mobile Application that allows users to search through detailed descriptions of the national regulatory oversight approaches from the 11 IEGBBR member countries.",
-          "The Canadian Biosafety App allows users to engage with the Canadian Biosafety Standards (CBS) by finding the requirements that are specific to your facility."
-        ],
-        "languages": [
-          "English, French",
-          "English"
-        ],
-        "links": [
-          "https://biosecuritycentral.org/resource/requirements-and-protocols/iegbbr-app/",
-          "https://biosecuritycentral.org/resource/requirements-and-protocols/canadian-biosafety-app/"
+        "resources": [
+          {
+            "name":"Dual-Use Oversight",
+            "description": "The International Experts Group of Biosafety and Biosecurity Regulators (IEGBBR) developed the IEGBBR Mobile Application that allows users to search through detailed descriptions of the national regulatory oversight approaches from the 11 IEGBBR member countries.",
+            "language": "English, French",
+            "link": "https://biosecuritycentral.org/resource/requirements-and-protocols/iegbbr-app/"
+          },
+          {
+            "name":"Canadian Biosafety App",
+            "description": "The Canadian Biosafety App allows users to engage with the Canadian Biosafety Standards (CBS) by finding the requirements that are specific to your facility.",
+            "language": "English",
+            "link": "https://biosecuritycentral.org/resource/requirements-and-protocols/canadian-biosafety-app/"
+          }
         ]
       },
       {
         "title": "Simulation games",
-        "names": [
-          "Biorisk Adventure",
-          "Covid simulator"
-        ],
-        "descriptions": [
-          "By playing this game, you will learn how to apply knowledge and make sound judgements in the selection of appropriate risk-control measures that are achievable using the local resources available, are not overly restrictive, and enable the work to proceed safely and securely.",
-          "This game will let you step into the place of a government that must decide what mitigation measures to take. You will try out managing situations connected to the coronavirus epidemic and see the consequences of your decisions in detail."
-        ],
-        "languages": [
-          "English",
-          "English, Czech"
-        ],
-        "links": [
-          "https://ifbabioriskadventure.org/",
-          "https://covidgame.info/"
+        "resources": [
+          {
+            "name":"Biorisk Adventure",
+            "description": "By playing this game, you will learn how to apply knowledge and make sound judgements in the selection of appropriate risk-control measures that are achievable using the local resources available, are not overly restrictive, and enable the work to proceed safely and securely.",
+            "language": "English",
+            "link": "https://ifbabioriskadventure.org/"
+          },
+          {
+            "name":"Covid simulator",
+            "description": "This game will let you step into the place of a government that must decide what mitigation measures to take. You will try out managing situations connected to the coronavirus epidemic and see the consequences of your decisions in detail.",
+            "language": "English, Czech",
+            "link": "https://covidgame.info/"
+          }
         ]
       },
       {
         "title": "Other pages",
-        "names": ["Biosecurity central", "Our world in data"],
-        "descriptions": [
-          "Relevant biosafety information.",
-          "Relevant coronavirus pandemic information."
-        ],
-        "languages": ["English", "English"],
-        "links": ["https://biosecuritycentral.org/explore/?", "https://ourworldindata.org/coronavirus"]
+        "resources": [
+          {
+            "name":"Biosecurity central",
+            "description": "Relevant biosafety information.",
+            "language": "English",
+            "link": "https://biosecuritycentral.org/explore/?"
+          },
+          {
+            "name":"Our world in data",
+            "description": "Relevant coronavirus pandemic information.",
+            "language": "English",
+            "link": "https://ourworldindata.org/coronavirus"
+          }
+        ]
       }
     ]
   }

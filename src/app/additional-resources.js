@@ -10,21 +10,22 @@ export default function AdditionalResources(){
     const resources = languageData.additionalResources;
     const sections = resources.sections;
 
-    // TODO: Manejar un array de objetos, en vez de sólo los arrays. (Por mejorar).
-
     const loadSectionResources = (section) => {
 
         let sectionComponents = [];
+        const resourcesSection = section.resources;
 
-        for (let i = 0; i < section.names.length; i++) {
+        for (let i = 0; i < resourcesSection.length; i++) {
+            const resource = resourcesSection[i];
+
             sectionComponents.push(
                 <div className="m-3 mb-6 p-6 border-2 border-my-yellow rounded-3xl">
                     <h1 className="m-1 text-lg mb-2">
-                        <FontAwesomeIcon icon={faScrewdriverWrench}/> {section.names[i]}
+                        <FontAwesomeIcon icon={faScrewdriverWrench}/> {resource.name}
                     </h1>
-                    <p className="m-3">{section.descriptions[i]}</p>
-                    <p className="m-2">{resources.language}{section.languages[i]}</p>
-                    <a className="m-2" href={section.links[i]}>link {<FontAwesomeIcon icon={faLink}/>}</a>
+                    <p className="m-3">{resource.description}</p>
+                    <p className="m-2">{section.language}{resource.language}</p>
+                    <a className="m-2" href={resource.link}>link {<FontAwesomeIcon icon={faLink}/>}</a>
                 </div>
             );
         }

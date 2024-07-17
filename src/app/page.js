@@ -14,6 +14,7 @@ export default function Page() {
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
             <title>{languageData.title}</title>
+            <link rel="icon" href={`./biohazard.svg`} />
         </head>
         <body>
         <div className="sm:flex justify-between items-center bg-my-blue mb-6 pb-1 sm:pb-0 text-white">
