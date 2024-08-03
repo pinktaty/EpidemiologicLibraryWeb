@@ -379,6 +379,7 @@
           ],
           "file": "Sarampion-2020",
           "fileDescription": "Sarampión 2020",
+          "fileContent": "La información expuesta en esta base de datos fue recolectada del pdf 'Boletín Informativo no.19 de la Situación del Cierre del Brote de Srampión, 14 de agosto de 2020' proporcionado por la Dirección de Vigilancia Epidemiológica de Enfermedades Transmisibles de México.\nDicha base de datos contiene la siguiente información: patógeno, clasificación del patógeno; casos detectados y muertes según año y lugar de origen.",
           "image": "Sarampion-2020",
           "source": "BroteSarampion19"
         },

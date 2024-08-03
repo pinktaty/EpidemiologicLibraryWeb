@@ -305,7 +305,8 @@
           ],
           "file": "HIV",
           "fileDescription": "HIV 2000-2024",
-          "fileContent": "The information presented in this database was collected from the pdf 'Sistema de Vigilancia Epidemiológica de VIH, Informe Histórico de VIH 1er Trimestre 2024' provided by the Directorate of Epidemiological Surveillance of Communicable Diseases of Mexico.\nThis database contains the following information: pathogen, pathogen classification, detected cases and deaths by year and place of origin.",          "image": "VIH",
+          "fileContent": "The information presented in this database was collected from the pdf 'Sistema de Vigilancia Epidemiológica de VIH, Informe Histórico de VIH 1er Trimestre 2024' provided by the Directorate of Epidemiological Surveillance of Communicable Diseases of Mexico.\nThis database contains the following information: pathogen, pathogen classification, detected cases and deaths by year and place of origin.",
+          "image": "VIH",
           "source": "VIH"
         },
         {
@@ -360,6 +361,7 @@
           ],
           "file": "Measles-2020",
           "fileDescription": "Measles 2020",
+          "fileContent": "The information presented in this database was collected from the pdf 'Boletín Informativo no.19 de la Situación del Cierre del Brote de Srampión, 14 de agosto de 2020' provided by the Directorate of Epidemiological Surveillance of Communicable Diseases of Mexico.\nThis database contains the following information: pathogen, pathogen classification, detected cases and deaths by year and place of origin.",
           "image": "Sarampion-2020",
           "source": "BroteSarampion19"
         },
