@@ -306,7 +306,8 @@
           ],
           "file": "HIV",
           "fileDescription": "HIV 2000-2024",
-          "image": "VIH"
+          "fileContent": "The information presented in this database was collected from the pdf 'Sistema de Vigilancia Epidemiológica de VIH, Informe Histórico de VIH 1er Trimestre 2024' provided by the Directorate of Epidemiological Surveillance of Communicable Diseases of Mexico.\nThis database contains the following information: pathogen, pathogen classification, detected cases and deaths by year and place of origin.",          "image": "VIH",
+          "source": "VIH"
         },
         {
           "title": "Influenza",
@@ -351,7 +352,7 @@
           "file": "InvasivePneumococcusDisease",
           "fileDescription": "Invasive Pneumococcus\nDisease 2014-2022",
           "fileContent": "The information presented in this database was collected from all the PDFs of national morbidity from 2000 to 2022 provided by the General Directorate of Epidemiology of Mexico. \nThis database contains the following information: pathogen, classification of the pathogen; detected cases and deaths by year and place of origin.",
-          "image": "",
+          "image": "Neumococo",
           "source": "MorbilidadNacional2000-2022"
         },
         {

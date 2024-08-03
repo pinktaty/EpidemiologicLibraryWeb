@@ -216,7 +216,7 @@
           "file": "EnfermedadInvasivaNeumococo",
           "fileDescription": "Enfermedad invasiva por\nneumococo 2000-2022",
           "fileContent": "La información expuesta en esta base de datos fue recolectada de los pdfs de morbilidad nacional desde el año 2000 al año 2022 proporcionados por la Dirección General de Epidemiología de México.\nDicha base de datos contiene la siguiente información: patógeno, clasificación del patógeno; casos detectados y muertes según año y lugar de origen.",
-          "image": "",
+          "image": "Neumococo",
           "source": "MorbilidadNacional2000-2022"
         },
         {
@@ -439,12 +439,38 @@
           "source": "MorbilidadNacional2000-2022"
         },
         {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           "title": "VIH",
           "filters": [
           ],
           "file": "VIH",
           "fileDescription": "VIH 2000-2024",
-          "image": "VIH"
+          "fileContent": "La información expuesta en esta base de datos fue recolectada del pdf 'Sistema de Vigilancia Epidemiológica de VIH, Informe Histórico de VIH 1er Trimestre 2024' proporcionado por la Dirección de Vigilancia Epidemiológica de Enfermedades Transmisibles de México.\nDicha base de datos contiene la siguiente información: patógeno, clasificación del patógeno; casos detectados y muertes según año y lugar de origen.",
+          "image": "VIH",
+          "source": "VIH"
         },
         {
           "title": "Zika",
