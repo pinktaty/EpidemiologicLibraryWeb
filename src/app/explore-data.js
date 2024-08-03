@@ -1,6 +1,6 @@
 import {useContext, useState} from "react";
 import {LanguageContext} from "@/app/language-context";
-import {faCalendarDays, faDisease, faSquareVirus, faDownload, faTurnDown} from "@fortawesome/free-solid-svg-icons";
+import {faCalendarDays, faDisease, faSquareVirus, faDownload, faTurnDown, faTimes} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
@@ -177,9 +177,16 @@ export default function ExploreData(){
 
     // Downloads
 
-    const loadDownload = (filter) => {
+    const [bigImage, setBigImage] = useState(false);
 
-        // TODO: Hacer que  mi información cambie si el idioma cambia
+    const clickImage = () => {
+        setBigImage(true);
+    }
+    const closeImage = () => {
+        setBigImage(false);
+    }
+
+    const loadDownload = (filter) => {
 
         return (
             <div className="lg:flex items-center text-center m-8">
@@ -190,7 +197,8 @@ export default function ExploreData(){
                     </a>
                     <p className="mt-3 whitespace-pre-line">{filter.fileDescription}</p>
                 </div>
-                <div className="lg:w-2/4 flex flex-col items-center mt-10">
+                <div className="lg:w-2/4 flex flex-col items-center mt-10"
+                     onClick={clickImage}>
                     <Image
                         className="mx-auto border-my-yellow border-4 rounded-2xl"
                         src={`./graphs/${filter.image}.png`}
@@ -200,6 +208,27 @@ export default function ExploreData(){
                     />
                     <p className="mt-3 text-center">{diseases.cases} {filter.fileDescription}</p>
                 </div>
+                {bigImage && (
+                    <div
+                        className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 transition-opacity duration-300"
+                        style={{ opacity: bigImage ? 1 : 0 }}
+                    >
+                        <div className="relative w-4/5 h-4/5">
+                            <Image
+                                className="border-my-yellow border-4 rounded-2xl"
+                                src={`./graphs/${filter.image}.png`}
+                                alt=""
+                                layout="fill"
+                            />
+                            <button
+                                className="absolute top-2 right-2 bg-my-green text-white rounded-full pb-1 pt-1 pl-2.5 pr-2.5 shadow-lg"
+                                onClick={closeImage}
+                            >
+                                <FontAwesomeIcon icon={faTimes}/>
+                            </button>
+                        </div>
+                    </div>
+                )}
                 <div className="lg:w-1/4 flex flex-col items-center mt-10">
                     <p className="p-4 mb-6 inline-flex border-my-green border-2 rounded-2xl">{filter.fileContent}</p>
                     <p className="p-2 inline-flex border-my-yellow border-2 rounded-2xl">{diseases.source}

@@ -5,8 +5,7 @@
     "title": "Lenguaje",
     "types": [
       "Inglés",
-      "Español",
-      "Noruego"
+      "Español"
     ]
   },
   "home": {
@@ -30,7 +29,7 @@
     "news": {
       "title": "Noticias y actualizaciones del proyecto",
       "content": [
-        "Presentación del proyecto y despliegue oficial de la página el 1 de agosto del 2024."
+        "Presentación del proyecto y despliegue oficial de la página el 10 de agosto del 2024."
       ]
     },
     "contact": {
@@ -51,7 +50,7 @@
     "instructionUserFilters": "Para eliminar un filtro seleccionado, clicar en él.",
     "diseases": {
       "title": "Enfermedades",
-      "cases": "Casos Detectados ",
+      "cases": "Eje Y: Número de Casos Detectados de ",
       "source": "Fuente: ",
       "data": [
         {

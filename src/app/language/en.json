@@ -5,8 +5,7 @@
     "title": "Language",
     "types": [
       "English",
-      "Spanish",
-      "Norwegian"
+      "Spanish"
     ]
   },
   "home": {
@@ -30,7 +29,7 @@
     "news": {
       "title": "News and updates about the project",
       "content": [
-        "Official presentation of the proyect and deployment of the page on August 1st, 2024."
+        "Official presentation of the proyect and deployment of the page on August 10th, 2024."
       ]
     },
     "contact": {
@@ -57,7 +56,7 @@
     "instructionUserFilters": "To unselect a filter, click on it.",
     "diseases": {
       "title": "Diseases",
-      "cases": "Cases ",
+      "cases": "Y-axis: Number of Detected Cases of ",
       "source": "Source: ",
       "data": [
         {
