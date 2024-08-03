@@ -1,6 +1,6 @@
 import {useContext, useState} from "react";
 import {LanguageContext} from "@/app/language-context";
-import {faCalendarDays, faDisease, faSquareVirus, faDownload, faTurnDown, faTimes} from "@fortawesome/free-solid-svg-icons";
+import {faCheck, faCalendarDays, faDisease, faSquareVirus, faDownload, faTurnDown, faTimes} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
@@ -11,9 +11,14 @@ export default function ExploreData(){
     const loadInstructions = () => {
         return (
             <div className="mt-12 mb-6 text-center">
-                <p className="mb-2 text-red-800">{exploreData.instructions}</p>
+                <p className="mb-2 text-red-500">{exploreData.instructions}</p>
                 <p className="mb-2">{exploreData.specifications}</p>
-                <p>{exploreData.actualization}</p>
+                <p className="flex items-center justify-center">
+                    <div className="mr-2 text-my-green">
+                        <FontAwesomeIcon icon={faCheck}/>
+                    </div>
+                    {exploreData.actualization}
+                </p>
             </div>
         );
     }
