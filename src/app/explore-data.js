@@ -11,7 +11,7 @@ export default function ExploreData(){
     const loadInstructions = () => {
         return (
             <div className="mt-12 mb-6 text-center">
-                <p className="mb-2">{exploreData.instructions}</p>
+                <p className="mb-2 text-red-800">{exploreData.instructions}</p>
                 <p className="mb-2">{exploreData.specifications}</p>
                 <p>{exploreData.actualization}</p>
             </div>
