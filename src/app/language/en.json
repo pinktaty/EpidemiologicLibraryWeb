@@ -49,7 +49,7 @@
   "exploreData": {
     "title": "Explore Data",
     "instructions": "To search for information in the database, select the disease and then the filters of interest.",
-    "specifications": "If you fiend a field in the database with the notation IND, it means the information wasn't available in the original source.",
+    "specifications": "If you find a field in the database with the notation IND, it means the information wasn't available in the original source.",
     "actualization": "This database is updated until July 2024.",
     "selectedDisease": "Your selected disease is",
     "userFilters": "Selected filters:",
